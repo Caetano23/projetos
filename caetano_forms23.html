@@ -1,0 +1,160 @@
+<!doctype HTML>
+<br lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+      
+legend{
+   margin-top: 0%;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 25px;
+   color: rgb(0, 97, 0);
+  }
+
+
+  form{
+
+    margin-left: 20%;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 25px;
+    color: rgb(0, 97, 0);
+  }
+
+   body{
+    background:linear-gradient(to right,rgb(20, 20, 20) ,rgb(46, 46, 46),rgb(92, 92, 92));
+   
+   }
+
+   .box{
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform:translate(-50%,-50%);
+      background-color: rgba(0, 0,0, 0.8);
+      padding: 15px;
+      border-radius: 15px;
+   }
+
+   fieldset{
+    border: 3px solid green;
+   }
+
+   input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid green;
+    color: rgb(245, 255, 240);
+    font-size: 15px;
+    cursor: pointer;
+   }
+   
+   .enviar{
+    background-color: rgb(0, 97, 0);
+    width: 60px;
+   }
+
+   .enviar:hover{
+    background-color: rgb(15, 196, 15);
+   }
+
+   .limpar{
+    background-color: rgb(0, 97, 0);
+    width: 60px;
+   
+  }
+
+  .limpar:hover{
+    background-color: rgb(15, 196, 15);
+  }
+
+  .alinhar{
+    display: inline-flex;
+  }
+  
+    </style>
+
+</head>
+
+<div class="box">
+
+<fieldset>
+
+<legend>Trabalhe conosco</legend><br/>
+
+<form>
+
+<label for="txtnome">Nome completo:&nbsp;&nbsp;</label>
+<input type="text" placeholder="preencha o nome completo" required/><br/><br/>
+
+<label for="textende">Endereço:&nbsp;&nbsp;</label>
+<input name="textende" type="text" placeholder="preencha o endereço completo" required/><br/><br/>
+
+<label for="textcidade"> Cidade:&nbsp;&nbsp;</label>
+<input name="textcidade" type="text" placeholder="preencha a cidade completo" required/><br/><br/>
+<label for="txtuf">UF:&nbsp;&nbsp;</label>
+
+<select name="textuf">
+
+  <option>AC</option>
+  <option>AM</option>
+  <option>AL</option>
+  <option>AP</option>
+  <option>BA</option>
+  <option>CE</option>
+  <option>DF</option>
+  <option>ES</option>
+  <option>GO</option>
+  <option>MA</option>
+  <option>MG</option>
+  <option>MT</option>
+  <option>MS</option>
+  <option>PA</option>
+  <option>PB</option>
+  <option>PE</option>
+  <option>PI</option>
+  <option>PR</option>
+  <option>RJ</option>
+  <option>RN</option>
+  <option>RO</option>
+  <option>RR</option>
+  <option>RS</option>
+  <option>SC</option>
+  <option>SE</option>
+  <option selected>SP</option>
+  <option>TO</option>
+
+       </select><br></br>
+
+<label for="CEP">Cep:&nbsp;&nbsp;</label>
+<input name="txtsenha" type="text" placeholder="insira seu CEP" required/><br/><br/>
+
+<label for="sexo">Sexo:&nbsp;&nbsp;</label><br/>
+<input name="txtsexo" type="radio" value="F" checked/>Feminino&nbsp;&nbsp;
+<input name="txtsexo" type="radio" value="M"/>Masculino<br/><br/>
+
+<label for="txtsenha">Cadastre a sua senha:&nbsp;&nbsp;
+<input name="txtsenha" type="password" placeholder="Preencha a sua senha" required><br/><br/>
+ 
+<div class="alinhar">
+<div class="enviar"><input type="submit" value="Enviar"/></div>&nbsp;
+<div class="limpar"><input type="reset" value="Limpar"/></div>
+</div>
+
+</form>
+
+</fieldset>
+
+</div>
+
+ <script>
+
+ window.alert('Bem vindo, faça seu cadastro!')
+
+ </script>
+
+</body>
+
+</html>
